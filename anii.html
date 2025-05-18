@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Libera Tour India</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f0f8ff;
+    }
+
+    header {
+      background-image: url('https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=1950&q=80');
+      background-size: cover;
+      background-position: center;
+      text-align: center;
+      color: white;
+      padding: 80px 20px;
+      position: relative;
+    }
+
+    header h1 {
+      font-size: 3.5em;
+      background: rgba(0, 0, 0, 0.6);
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 10px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #0077b6;
+      padding: 10px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav button {
+      background: #90e0ef;
+      border: none;
+      margin: 0 10px;
+      padding: 10px 20px;
+      font-size: 1em;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    nav button:hover {
+      background-color: #caf0f8;
+      color: #03045e;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #03045e;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .review {
+      background: #ffffff;
+      border-left: 5px solid #0077b6;
+      padding: 15px;
+      margin: 15px 0;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .review span {
+      color: #f9c74f;
+      font-size: 1.2em;
+    }
+
+    footer {
+      background: #023e8a;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    a {
+      color: #90e0ef;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Libera Tour India</h1>
+  </header>
+
+  <nav>
+    <button onclick="document.getElementById('about').scrollIntoView()">About Us</button>
+    <button onclick="document.getElementById('experience').scrollIntoView()">Travel Experience</button>
+    <button onclick="document.getElementById('itineraries').scrollIntoView()">Itineraries</button>
+    <button onclick="document.getElementById('reviews').scrollIntoView()">Reviews</button>
+  </nav>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>
+      Welcome to Libera Tour India, your ultimate travel partner in discovering the breathtaking diversity and rich cultural heritage of India. Established with a passion for exploration and a deep love for India’s traditions, we are dedicated to creating memorable and immersive travel experiences tailored just for you.
+      <br><br>
+      Whether you dream of watching the sunrise over the Taj Mahal, experiencing the spiritual aura of Varanasi, exploring the desert forts of Rajasthan, or relaxing on the beaches of Goa — we make it all possible with professional planning and personalized service. Our mission is to offer authentic journeys that connect travelers with the heart of India.
+    </p>
+  </section>
+
+  <section id="experience">
+    <h2>Travel Experience</h2>
+    <p>
+      At Libera Tour India, we believe that travel is not just about destinations — it's about the experiences you carry with you. Our curated tours are designed to engage all your senses. Imagine sipping masala chai in the Himalayas, attending a vibrant Holi festival in Mathura, or taking a peaceful boat ride on Kerala’s backwaters.
+      <br><br>
+      With local guides, handpicked stays, and insider access to cultural events, we ensure every journey is a deep dive into India's beauty and complexity. Whether you're a solo adventurer, a couple on a honeymoon, or a family seeking adventure, we tailor each experience to your interests and pace.
+    </p>
+  </section>
+
+  <section id="itineraries">
+    <h2>Itineraries</h2>
+    <p>
+      Our flexible itineraries are crafted for every kind of traveler:
+    </p>
+    <ul>
+      <li><strong>Golden Triangle Tour (Delhi – Agra – Jaipur):</strong> Perfect for first-timers who want to experience India's architectural marvels, including the Taj Mahal and Amber Fort.</li>
+      <li><strong>Spiritual Varanasi & Khajuraho:</strong> Dive into ancient traditions, river rituals, and stunning temple art.</li>
+      <li><strong>Rajasthan Heritage Safari:</strong> Explore desert cities like Jodhpur, Jaisalmer, and Udaipur with royal palace stays.</li>
+      <li><strong>Southern Delights:</strong> Discover the temples of Tamil Nadu, the beaches of Kerala, and the lush Western Ghats.</li>
+      <li><strong>Himalayan Adventure:</strong> Trek in Himachal or experience peace in a Ladakh monastery retreat.</li>
+    </ul>
+    <p>
+      Our team is happy to customize routes based on your travel dates, budget, and special interests.
+    </p>
+  </section>
+<section id="reviews">
+  <h2>Traveler Reviews</h2>
+  <div id="testimonial-slider">
+    <div class="review active">
+      <p><strong>Agostino Toselli – 🇮🇹 Italy</strong></p>
+      <p>
+        Abbiamo contattato Ashok via Facebook dietro consiglii di amici che avevano già viaggiato con lui...
+        Ashok oltre ad essere un autista prudente e serio, è stato di grandissimo aiuto per conoscere meglio questo meraviglioso paese.
+        Consigliatissimo, servizio impeccabile e di standard elevato (solo per fare un esempio la macchina sempre lucida è pulitissima).
+      </p>
+      <div class="stars">★★★★★</div>
+    </div>
+
+    <div class="review">
+      <p><strong>Pierluigi – 🇮🇹 Italy</strong></p>
+      <p>
+        Contattato Ashok tramite mia figlia che precedentemente ci aveva viaggiato, ci siamo trovati benissimo...
+        appena arrivati ci ha dato una SIM card indiana per qualunque problema veramente GRANDE.
+      </p>
+      <div class="stars">★★★★★</div>
+    </div>
+
+    <div class="review">
+      <p><strong>Emma Julia – 🇮🇹 Italy</strong></p>
+      <p>
+        I didn't have much time to spare so Ashok made it super easy & no fuss for my overnight stay in Agra...
+        Good company as I was travelling alone. Recommended.
+      </p>
+      <div class="stars">★★★★★</div>
+    </div>
+
+    <div class="review">
+      <p><strong>Françoise Cruells – 🇫🇷 France</strong></p>
+      <p>
+        Now it’s more than 6 years I’m travelling with Libera Tours India, I used to come with groups...
+        A real adventure tour at more than 5000m altitude on a road that wasn’t a road!
+        I definitely advise to travel with Libera Tour India!
+      </p>
+      <div class="stars">★★★★★</div>
+    </div>
+  </div>
+
+  <div class="review-nav">
+    <button onclick="prevReview()">⏮ Prev</button>
+    <button onclick="nextReview()">Next ⏭</button>
+  </div>
+</section>
+  <footer>
+    <p>© 2025 Libera Tour India | Designed with ♥ for Travelers</p>
+    <p>📞 Contact: <a href="tel:+919818251206">+91 9818251206</a></p>
+    <p>📧 Email: <a href="mailto:veeruindia@gmail.com">veeruindia@gmail.com</a>, <a href="mailto:liberatours@gmail.com">liberatours@gmail.com</a></p>
+  </footer>
+
+</body>
+</html>
